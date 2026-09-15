@@ -1,0 +1,29 @@
+name: sigap_user
+description: SIGAP - Terminal Lapangan (field/user terminal, BLE + GPS only)
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_blue_plus: ^1.32.12
+  geolocator: ^13.0.1
+  permission_handler: ^11.3.1
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+  url_launcher: ^6.3.0
+
+  # Intentionally NOT included, and must never be added back to this
+  # project: firebase_core, firebase_database, firebase_auth.
+  # Adding any of them re-introduces the database URL and Firebase
+  # SDK into this APK and defeats the entire point of the split.
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+flutter:
+  uses-material-design: true
